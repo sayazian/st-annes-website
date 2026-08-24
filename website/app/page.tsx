@@ -8,7 +8,7 @@ export default function Home() {
     <header className="header">
       <a className="brand" href="#top"><span className="cross">✦</span><span>St. Anne&apos;s<small>Episcopal Church · Fremont</small></span></a>
       <nav aria-label="Main navigation">
-        <a href="#welcome">Welcome</a><a href="#worship">Worship</a><a href="#life">Church life</a><a href="#visit">Visit</a>
+        <a href="#welcome">Welcome</a><a href="#worship">Worship</a><a href="#life">Church life</a><a href="#visit">Visit</a><a href="/archive">Archive</a>
       </nav>
       <a className="button small" href="#give">Give</a>
     </header>
@@ -55,6 +55,6 @@ export default function Home() {
       <section className="give section" id="give"><div><p className="eyebrow">Generosity in action</p><h2>Help love take root.</h2></div><div><p>Your gifts sustain worship, care for our church home, and support ministries that serve our neighbors.</p><form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank"><input type="hidden" name="cmd" value="_donations"/><input type="hidden" name="business" value={c.email}/><input type="hidden" name="currency_code" value="USD"/><input type="hidden" name="item_name" value="St. Anne's Episcopal Church Donation"/><button className="button" type="submit">Give securely with PayPal ↗</button></form></div></section>
     </main>
 
-    <footer><div className="footerLead"><span className="cross">✦</span><h2>All are welcome.</h2><p>Wherever you are on your spiritual journey.</p></div><div className="footerGrid"><div><b>St. Anne&apos;s Episcopal Church</b><p>2791 Driscoll Road<br/>Fremont, CA 94539</p></div><div><b>Connect</b><a href={`mailto:${c.email}`}>{c.email}</a><a href={`tel:${c.phone}`}>{c.phone}</a></div><div><b>Follow</b><a href={c.facebook} target="_blank" rel="noreferrer">Facebook ↗</a><a href={c.instagram} target="_blank" rel="noreferrer">Instagram ↗</a></div></div><div className="copyright">© {new Date().getFullYear()} St. Anne&apos;s Episcopal Church</div></footer>
+    <footer><div className="footerLead"><span className="cross">✦</span><h2>All are welcome.</h2><p>Wherever you are on your spiritual journey.</p></div><div className="footerGrid"><div><b>St. Anne&apos;s Episcopal Church</b><p>2791 Driscoll Road<br/>Fremont, CA 94539</p></div><div><b>Connect</b><a href={`mailto:${c.email}`}>{c.email}</a><a href={`tel:${c.phone}`}>{c.phone}</a></div><div><b>Explore</b><a href={c.facebook} target="_blank" rel="noreferrer">Facebook ↗</a><a href={c.instagram} target="_blank" rel="noreferrer">Instagram ↗</a><a href="/archive">WordPress archive →</a></div></div><div className="copyright">© {new Date().getFullYear()} St. Anne&apos;s Episcopal Church</div></footer>
   </>;
 }
